@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #dcdcdc;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.car {
+    position: absolute;
+    bottom: 50px;
+    left: -600px;
+    width: 600px;
+    height: auto;
+    animation: drive 4s ease-in-out forwards;
+}
+
+@keyframes drive {
+    to {
+        transform: translateX(calc(100vw - 650px));
+    }
+}
+
+
+
+
+
